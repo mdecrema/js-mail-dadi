@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form_login {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: blue;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+}
+
+#login {
+  padding: 5px 20px;
+  background-color: midnightblue;
+  border: 1px solid midnightblue;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+}
