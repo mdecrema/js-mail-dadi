@@ -42,3 +42,20 @@ input {
   display: block;
   margin: 20px auto;
 }
+
+.gioco_dadi {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 10px;
+}
+
+#numComputer, #numPlayer, #winner {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}

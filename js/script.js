@@ -6,16 +6,24 @@ var emailInserita = document.getElementById("email").value;
 // bottone sul quale agirà l'evento
 var login = document.getElementById("login");
 
-// funzione che si eseguirà in relazione all'evento click
-login.addEventListener("click", emailCheck);
+
 
 // funzione di controllo della mail passata
-function emailCheck() {
-  for (i=0; i<=2; i++) {
-    if (emailInserita == listaEmail[i]) {
-      alert("BENVENUTO!");
-    } else {
-      alert("Email inserita non è valida");
-    }
+
+
+var numComputer= document.getElementById("numComputer");
+var numPlayer= document.getElementById("numPlayer");
+var vincitore=document.getElementById("winner");
+var play = document.getElementById("play");
+var numGeneratoComputer= Math.floor(Math.random() * 6) + 1;
+var numGeneratoPlayer =Math.floor(Math.random() * 6) + 1;
+
+play.addEventListener("click", function() {
+  numComputer.innerHTML=numGeneratoComputer;
+  numPlayer.innerHTML=numGeneratoPlayer;
+  if (numGeneratoPlayer > numGeneratoComputer) {
+    vincitore.innerHTML="Player";
+  } else {
+    vincitore.innerHTML="Computer";
   }
-};
+});
