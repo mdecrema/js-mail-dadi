@@ -7,8 +7,19 @@ var emailInserita = document.getElementById("email").value;
 var login = document.getElementById("login");
 
 
+login.addEventListener("click", function() {
+  for (i=0; i <= listaEmail.length; i++) {
+   if (listaEmail[i] == emailInserita) {
+     alert("BENVENUTO!");
+   } else {
+     alert("La mail inserita non è valida.")
+   }
+  }
+});
 
 // funzione di controllo della mail passata
+
+
 
 
 var numComputer= document.getElementById("numComputer");
